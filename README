@@ -1,0 +1,7 @@
+MyActiveX is an example of ATL-based OLE control.
+
+After compiling control, call "regsvr32 MyActiveX.dll" from cmd.exe
+
+Examples:
+  Examples/MyActiveX.html - embed control in HTML page(requires IE).
+  Examples/MyControl.cs - embed control in Windows.Forms application.

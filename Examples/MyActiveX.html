@@ -1,0 +1,39 @@
+<HTML>
+<HEAD>
+  <TITLE>Test page for object MyControl</TITLE>
+  <script type="text/javascript">
+var running = false;
+function OnClick()
+{
+  var ctl = document.getElementById("MyControl");
+  var btn = document.getElementById("btn");
+  if(running)
+  {
+    ctl.Stop();
+    running = false;
+    btn.value = "Run";
+  }
+  else
+  {
+    ctl.Run();
+    running = true;
+    btn.value = "Stop";
+  }
+}
+</script>
+</HEAD>
+<BODY>
+  <center>
+    <input type=button value="Run" id="btn"
+    style="display:block; padding: 3px 20px;"
+         onclick="OnClick();"/>
+  <OBJECT ID="MyControl"
+    style="width:500px; height:500px;"
+    CLASSID="CLSID:5747094E-84FB-47B4-BC0C-F89FB583895F"></OBJECT>
+    <script type="text/javascript">
+      document.getElementById("MyControl").Stop();
+    </script>
+    </center>
+</BODY>
+</HTML>
+

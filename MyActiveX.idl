@@ -1,0 +1,43 @@
+[
+	uuid(1E4E47F3-21AF-407C-9544-59C34C81F3FA),
+	version(1.0),
+	helpstring("MyActiveX 1.0 Type Library")
+]
+library MyActiveXLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		object,
+		uuid(2B26D028-4DA6-4D69-9513-D0CA550949D1),
+		dual,
+		helpstring("IMyControl Interface"),
+		pointer_default(unique)
+	]
+	interface IMyControl : IDispatch
+	{
+    [id(1), helpstring("method Run")] HRESULT Run();
+    [id(2), helpstring("method Stop")] HRESULT Stop();
+	};
+
+	[
+		uuid(E7D13B5A-0A09-440A-81EA-C9E3B0105DB0),
+		helpstring("_IMyControlEvents Interface")
+	]
+	dispinterface _IMyControlEvents
+	{
+		properties:
+		methods:
+	};
+
+	[
+		uuid(5747094E-84FB-47B4-BC0C-F89FB583895F),
+		helpstring("MyControl Class")
+	]
+	coclass MyControl
+	{
+		[default] interface IMyControl;
+    [default, source] dispinterface _IMyControlEvents;
+	};
+};
