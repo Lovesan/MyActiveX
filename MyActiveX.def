@@ -1,7 +1,7 @@
 LIBRARY      "MyActiveX.dll"
 
 EXPORTS
-	DllCanUnloadNow     PRIVATE
-	DllGetClassObject   PRIVATE
-	DllRegisterServer   PRIVATE
-    DllUnregisterServer PRIVATE
+  DllCanUnloadNow     PRIVATE
+  DllGetClassObject   PRIVATE
+  DllRegisterServer   PRIVATE
+  DllUnregisterServer PRIVATE

@@ -1,6 +1,6 @@
-<HTML>
-<HEAD>
-  <TITLE>Test page for object MyControl</TITLE>
+<html>
+<head>
+  <title>Test page for MyControl ActiveX object</title>
   <script type="text/javascript">
 var running = false;
 function OnClick()
@@ -21,19 +21,17 @@ function OnClick()
   }
 }
 </script>
-</HEAD>
-<BODY>
+</head>
+<body>
   <center>
     <input type=button value="Run" id="btn"
-    style="display:block; padding: 3px 20px;"
+           style="display:block; padding: 3px 20px;"
          onclick="OnClick();"/>
-  <OBJECT ID="MyControl"
-    style="width:500px; height:500px;"
-    CLASSID="CLSID:5747094E-84FB-47B4-BC0C-F89FB583895F"></OBJECT>
-    <script type="text/javascript">
-      document.getElementById("MyControl").Stop();
-    </script>
-    </center>
-</BODY>
-</HTML>
+    <object id="MyControl"
+            style="width:500px; height:500px;"
+            classid="CLSID:5747094E-84FB-47B4-BC0C-F89FB583895F">
+    </object>
+  </center>
+</body>
+</html>
 

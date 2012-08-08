@@ -1,34 +1,34 @@
 HKCR
 {
-	MyActiveX.MyControl.1 = s 'MyControl Class'
-	{
-		CLSID = s '{5747094E-84FB-47B4-BC0C-F89FB583895F}'
-	}
-	MyActiveX.MyControl = s 'MyControl Class'
-	{
-		CLSID = s '{5747094E-84FB-47B4-BC0C-F89FB583895F}'
-		CurVer = s 'MyActiveX.MyControl.1'
-	}
-	NoRemove CLSID
-	{
-		ForceRemove {5747094E-84FB-47B4-BC0C-F89FB583895F} = s 'MyControl Class'
-		{
-			ProgID = s 'MyActiveX.MyControl.1'
-			VersionIndependentProgID = s 'MyActiveX.MyControl'
-			ForceRemove 'Programmable'
-			InprocServer32 = s '%MODULE%'
-			{
-				val ThreadingModel = s 'Apartment'
-			}
-			ForceRemove 'Control'
-			ForceRemove 'Insertable'
-			ForceRemove 'ToolboxBitmap32' = s '%MODULE%, 101'
-			'MiscStatus' = s '0'
-			{
-			    '1' = s '139665'
-			}
-			'TypeLib' = s '{1E4E47F3-21AF-407C-9544-59C34C81F3FA}'
-			'Version' = s '1.0'
-		}
-	}
+  MyActiveX.MyControl.1 = s 'MyControl Class'
+  {
+    CLSID = s '{5747094E-84FB-47B4-BC0C-F89FB583895F}'
+  }
+  MyActiveX.MyControl = s 'MyControl Class'
+  {
+    CLSID = s '{5747094E-84FB-47B4-BC0C-F89FB583895F}'
+    CurVer = s 'MyActiveX.MyControl.1'
+  }
+  NoRemove CLSID
+  {
+    ForceRemove {5747094E-84FB-47B4-BC0C-F89FB583895F} = s 'MyControl Class'
+    {
+      ProgID = s 'MyActiveX.MyControl.1'
+      VersionIndependentProgID = s 'MyActiveX.MyControl'
+      ForceRemove 'Programmable'
+      InprocServer32 = s '%MODULE%'
+      {
+        val ThreadingModel = s 'Apartment'
+      }
+      ForceRemove 'Control'
+      ForceRemove 'Insertable'
+      ForceRemove 'ToolboxBitmap32' = s '%MODULE%, 101'
+      'MiscStatus' = s '0'
+      {
+          '1' = s '139665'
+      }
+      'TypeLib' = s '{1E4E47F3-21AF-407C-9544-59C34C81F3FA}'
+      'Version' = s '1.0'
+    }
+  }
 }

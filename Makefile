@@ -50,4 +50,4 @@ $(TLB): $(IDL)
 	$(CPP) $(CPPFLAGS) $(CXXFLAGS) $<
 
 clean:
-	$(DEL) /F /Q $(DLL) $(OBJS) $(RES) $(TLB) $(EXP) $(EXPLIB)
+	$(DEL) /F /Q $(DLL) $(PDB) $(OBJS) $(RES) $(TLB) $(EXP) $(EXPLIB)
